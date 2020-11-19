@@ -1,0 +1,10 @@
+<h1>Dunder Mifflin's Finest!</h1>
+
+<ul>
+<% @employees.each do |e| %>
+    <p>
+    <%=link_to e.first_name, employee_path(e) %>
+    </p>
+<%end%>
+</ul>
+
